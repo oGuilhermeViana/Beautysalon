@@ -42,6 +42,7 @@ img {
   --text-color: hsl(0 0% 46%);
   --text-color-light: hsl(0 0% 98%);
   --body-color: hsl(0 0% 98%);
+  --body-color-light: hsl(0, 0%, 100%);
   
 }
 
@@ -269,6 +270,7 @@ nav.show div.icon-menu {
 /* ======== HOME ======== */
 #home {
   overflow: hidden;
+  background: var(--body-color);
 }
 #home .container {
   margin: 0;
@@ -315,7 +317,7 @@ nav.show div.icon-menu {
 
 /* ======== ABOUT ======== */
 #about {
-  background: white;
+  background: var(--body-color-light);
 }
 
 #about .container {
@@ -352,6 +354,9 @@ nav.show div.icon-menu {
 }
 
 /* ======== SERVICES ======== */
+#services {
+  background: var(--body-color);
+}
 .cads.grid {
   gap: 1.5rem;
 }
@@ -374,4 +379,47 @@ nav.show div.icon-menu {
 .card .title {
   font-size: 1.5rem;
   margin-bottom: 0.75rem;
+}
+
+/* ======== TESTIMONIALS ======== */
+#testimonials {
+  background: var(--body-color-light);
+}
+
+#testimonials blockquote {
+  padding: 2rem;
+  box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.08);
+  border-radius: .25rem;
+}
+
+#testimonials blockquote p {
+  position: relative;
+  text-indent: 1.875rem;
+  margin-bottom: 1.5rem;
+  color: var(--title-color);
+}
+
+#testimonials blockquote p span {
+  font-weight: var(--font-height-700);
+  font-size: 2.5rem;
+  font-family: serif;
+
+  position: absolute;
+  top: -.375rem;
+  left: -1.875rem;
+  color: var(--base-color);
+}
+
+#testimonials cite {
+  display: flex;
+  align-items: center;
+  font-style: normal;
+}
+
+#testimonials cite img {
+  width: 2rem; 
+  height: 2rem;
+  object-fit: cover;
+  clip-path: circle();
+  margin-right: .5rem;
 }
