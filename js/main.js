@@ -29,3 +29,28 @@ window.addEventListener('scroll', function(){
         header.classList.remove('scroll')
     }
 })
+
+/* Testimonials carousel slider swiper*/
+const swiper = new Swiper('.swiper', {
+    slidesPerView: 1,
+    loop: true,
+    pagination: {
+      el: '.swiper-pagination',
+    },
+
+    mousewheel: {
+        invert: true,
+    },
+    keyboard: true,
+  
+    // Navigation arrows
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+  
+    // And if we need scrollbar
+    scrollbar: {
+      el: '.swiper-scrollbar',
+    },
+  });
