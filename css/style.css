@@ -46,6 +46,10 @@ img {
 }
 
 /* ======== BASE ======== */
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-weight: var(--font-height-400);
   font-size: var(--font-size-normal);
