@@ -15,4 +15,4 @@
 * randomuser.me
 * IconMoon
 
-📎[Beautysalon](https://oguilhermeviana.github.io/Beautysalon/target="_blank")
+📎[Beautysalon](https://oguilhermeviana.github.io/Beautysalon/)
