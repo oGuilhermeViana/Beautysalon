@@ -534,3 +534,11 @@ footer .social a:hover {
   opacity: 1;
   transform: translateY(0);
 }
+
+
+@media (min-width: 992px) {
+  :root {
+    --font-size-title: 2.25rem;
+    --font-size-normal: 1.125rem;
+  }
+}
