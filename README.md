@@ -1,4 +1,17 @@
 # Beautysalon
- projeto feito acompanhado o NLW da Rocketseat
+ projeto feito acompanhado o NLW da Rocketseat, o projeto é uma página institucional no formato One Page, responsiva. Contém as seguintes seções: Header, Navigation, Home, Sobre, Serviços, Depoimentos, Contato e Footer
+ 
+##- Esse projeto foi desenvolvido com as seguintes tecnologias:
+* HTML
+* CSS
+* JavaScript
 
-link do projeto https://oguilhermeviana.github.io/Beautysalon/
+##- Bibliotecas
+* Google Fonts
+* SwipeJS
+* ScrollReveal
+
+##- Utilitários
+* randomuser.me
+* IconMoon
+📎[Beautysalon](https://oguilhermeviana.github.io/Beautysalon/)
