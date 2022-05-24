@@ -541,7 +541,32 @@ footer .social a:hover {
 
 /* Media Queries */
 @media (min-width: 1200px) {
-  
+  .section {
+    padding: 10rem;
+  }
+
+  nav .menu {
+    opacity: 1;
+    visibility: visible;
+    top: 0;
+  }
+
+  nav .menu ul {
+    display: flex;
+    gap: 2rem;
+  }
+
+  nav .menu li a.title {
+    font: var(--font-height-400) var(--font-size-normal) var(--font-family-dm-sans);
+  }
+
+  nav .icon-menu {
+    display: none;
+  }
+  nav ul li a::after {
+    bottom: -1.5rem;
+  }
+
   main {
     margin-top: var(--header-height);
   }
