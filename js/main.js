@@ -17,18 +17,17 @@ for (const link of links) {
     })
 }
 
-/* box-shadow quando ter scroll*/ 
+/* box-shadow no header quando ter scroll*/ 
+function chanceHeader () {
+    const header = document.querySelector('#header')
+    const navHeight = header.offsetHeight
 
-const header = document.querySelector('#header')
-const navHeight = header.offsetHeight
-
-window.addEventListener('scroll', function(){
     if (window.scrollY >= navHeight){
         header.classList.add('scroll')
     } else {
         header.classList.remove('scroll')
     }
-})
+}
 
 /* Testimonials carousel slider swiper*/
 const swiper = new Swiper('.swiper', {
@@ -57,7 +56,6 @@ const swiper = new Swiper('.swiper', {
 
 
 /* Scroll reveal */
-
 const scrollReveal = ScrollReveal({
     origin: 'top',
     distance: '30px',
@@ -70,5 +68,24 @@ scrollReveal.reveal(`
 #about .image, #about .text,
 #services header, #services .card,
 #testimonials header, #testimonials .swiper-wrapper,
-#contact .text, #contact .links
+#contact .text, #contact .links,
+footer .brand, footer .social
 `, {interval: 100})
+
+/* btn back to top */
+function backToTop() {
+    const backToTop = document.querySelector('.back-to-top')
+    
+    if (window.scrollY >= 500) {
+        backToTop.classList.add('show')
+    }else {
+        backToTop.classList.remove('show')
+    }
+}
+
+
+/* When Scroll */
+window.addEventListener('scroll', () => {
+    chanceHeader()
+    backToTop()
+})
