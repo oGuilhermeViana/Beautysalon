@@ -52,9 +52,7 @@ html {
 }
 
 body {
-  font-weight: var(--font-height-400);
-  font-size: var(--font-size-normal);
-  font-family: var(--font-family-dm-sans);
+  font: var(--font-height-400) var(--font-size-normal) var(--font-family-dm-sans);
   color: var(--text-color);
   background-color: var(--body-color);
   -webkit-font-smoothing: antialiased;
@@ -62,9 +60,7 @@ body {
 }
 
 .title {
-  font-weight: var(--font-height-700);
-  font-size: var(--font-size-title);
-  font-family: var(--font-family-poppins);
+  font: var(--font-height-700) var(--font-size-title) var(--font-family-poppins);
   color: var(--title-color);
   -webkit-font-smoothing: auto;
 }
@@ -78,9 +74,7 @@ body {
   padding: 2rem;
   border-radius: 0.25rem;
 
-  font-weight: var(--font-height-500);
-  font-size: var(--font-size-normal);
-  font-family: var(--font-family-dm-sans);
+  font: var(--font-height-500) var(--font-size-normal) var(--font-family-dm-sans);
 
   transition: .3s;
 }
@@ -157,9 +151,7 @@ main {
 
 /* ======== LOGO ======== */
 .logo {
-  font-weight: var(--font-height-700);
-  font-size: var(--font-size-logo);
-  font-family: var(--font-family-poppins);
+  font: var(--font-height-700) var(--font-size-logo) var(--font-family-poppins);
   color: var(--title-color);
 }
 
