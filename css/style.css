@@ -43,14 +43,26 @@ html {
 }
 
 body {
+<<<<<<< HEAD
   font: 400 1rem 'DM Sans', sans-serif;
+=======
+  font-weight: var(--font-height-400);
+  font-size: var(--font-size-normal);
+  font-family: var(--font-family-dm-sans);
+>>>>>>> parent of 76d4c00 (configuração nas fonts e fim mobile)
   color: var(--text-color);
   background: var(--body-color);
   -webkit-font-smoothing: antialiased;
 }
 
 .title {
+<<<<<<< HEAD
   font: 700 var(--title-font-size) 'Poppins', sans-serif;
+=======
+  font-weight: var(--font-height-700);
+  font-size: var(--font-size-title);
+  font-family: var(--font-family-poppins);
+>>>>>>> parent of 76d4c00 (configuração nas fonts e fim mobile)
   color: var(--title-color);
   -webkit-font-smoothing: auto;
 }
@@ -139,7 +151,13 @@ main {
 
 /*====  LOGO ============================ */
 .logo {
+<<<<<<< HEAD
   font: 700 1.31rem 'Poppins', sans-serif;
+=======
+  font-weight: var(--font-height-700);
+  font-size: var(--font-size-logo);
+  font-family: var(--font-family-poppins);
+>>>>>>> parent of 76d4c00 (configuração nas fonts e fim mobile)
   color: var(--title-color);
 }
 
@@ -478,6 +496,7 @@ footer i {
 
 footer .social a {
   margin-right: 2rem;
+<<<<<<< HEAD
   transition: 0.3s;
   display: inline-block;
 }
@@ -525,3 +544,6 @@ footer .social a:hover {
   }
 }
 /* medium devices: 767 > */
+=======
+}
+>>>>>>> parent of 76d4c00 (configuração nas fonts e fim mobile)

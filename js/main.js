@@ -17,6 +17,7 @@ for (const link of links) {
   })
 }
 
+<<<<<<< HEAD
 /* mudar o header da página quando der scroll */
 function changeHeaderWhenScroll() {
   const header = document.querySelector('#header')
@@ -76,3 +77,60 @@ window.addEventListener('scroll', function () {
   changeHeaderWhenScroll()
   backToTop()
 })
+=======
+/* box-shadow quando ter scroll*/ 
+
+const header = document.querySelector('#header')
+const navHeight = header.offsetHeight
+
+window.addEventListener('scroll', function(){
+    if (window.scrollY >= navHeight){
+        header.classList.add('scroll')
+    } else {
+        header.classList.remove('scroll')
+    }
+})
+
+/* Testimonials carousel slider swiper*/
+const swiper = new Swiper('.swiper', {
+    slidesPerView: 1,
+    loop: true,
+    pagination: {
+      el: '.swiper-pagination',
+    },
+
+    mousewheel: {
+        invert: true,
+    },
+    keyboard: true,
+  
+    // Navigation arrows
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+  
+    // And if we need scrollbar
+    scrollbar: {
+      el: '.swiper-scrollbar',
+    },
+  });
+
+
+/* Scroll reveal */
+
+const scrollReveal = ScrollReveal({
+    origin: 'top',
+    distance: '30px',
+    duration: 700,
+    reset: true
+})
+
+scrollReveal.reveal(`
+#home .image, #home .text,
+#about .image, #about .text,
+#services header, #services .card,
+#testimonials header, #testimonials .swiper-wrapper,
+#contact .text, #contact .links
+`, {interval: 100})
+>>>>>>> parent of 76d4c00 (configuração nas fonts e fim mobile)
