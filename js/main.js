@@ -18,6 +18,7 @@ for (const link of links) {
 }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 /* mudar o header da página quando der scroll */
 function changeHeaderWhenScroll() {
   const header = document.querySelector('#header')
@@ -80,6 +81,10 @@ window.addEventListener('scroll', function () {
 =======
 /* box-shadow quando ter scroll*/ 
 
+=======
+/* box-shadow quando ter scroll*/ 
+
+>>>>>>> parent of 76d4c00 (configuração nas fonts e fim mobile)
 const header = document.querySelector('#header')
 const navHeight = header.offsetHeight
 
@@ -132,5 +137,9 @@ scrollReveal.reveal(`
 #services header, #services .card,
 #testimonials header, #testimonials .swiper-wrapper,
 #contact .text, #contact .links
+<<<<<<< HEAD
+`, {interval: 100})
+>>>>>>> parent of 76d4c00 (configuração nas fonts e fim mobile)
+=======
 `, {interval: 100})
 >>>>>>> parent of 76d4c00 (configuração nas fonts e fim mobile)
