@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 /* Menu hamburger */
 const nav = document.querySelector('#header nav');
 const toggle = document.querySelectorAll('nav .toggle');
@@ -20,17 +18,18 @@ for (const link of links) {
 }
 
 /* box-shadow quando ter scroll*/ 
+function changeHeaderWhenScroll() {
+  const header = document.querySelector('#header')
+  const navHeight = header.offsetHeight
 
-const header = document.querySelector('#header')
-const navHeight = header.offsetHeight
-
-window.addEventListener('scroll', function(){
-    if (window.scrollY >= navHeight){
-        header.classList.add('scroll')
-    } else {
-        header.classList.remove('scroll')
-    }
-})
+  if (window.scrollY >= navHeight) {
+    // scroll é maior que a altura do header
+    header.classList.add('scroll')
+  } else {
+    // menor que a altura do header
+    header.classList.remove('scroll')
+  }
+}
 
 /* Testimonials carousel slider swiper*/
 const swiper = new Swiper('.swiper', {
@@ -74,4 +73,19 @@ scrollReveal.reveal(`
 #testimonials header, #testimonials .swiper-wrapper,
 #contact .text, #contact .links
 `, {interval: 100})
->>>>>>> parent of 76d4c00 (configuração nas fonts e fim mobile)
+
+function backToTop() {
+  const backToTopButton = document.querySelector('.back-to-top')
+
+  if (window.scrollY >= 560) {
+    backToTopButton.classList.add('show')
+  } else {
+    backToTopButton.classList.remove('show')
+  }
+}
+
+/* When Scroll */
+window.addEventListener('scroll', function () {
+  changeHeaderWhenScroll()
+  backToTop()
+})
