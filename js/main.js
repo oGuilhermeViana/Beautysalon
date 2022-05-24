@@ -71,7 +71,8 @@ scrollReveal.reveal(`
 #about .image, #about .text,
 #services header, #services .card,
 #testimonials header, #testimonials .swiper-wrapper,
-#contact .text, #contact .links
+#contact .text, #contact .links,
+footer .brand, footer .social
 `, {interval: 100})
 
 function backToTop() {
